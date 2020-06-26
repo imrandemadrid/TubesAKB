@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "449451622688",
+    "firebase_url": "https://logintubesakb.firebaseio.com",
+    "project_id": "logintubesakb",
+    "storage_bucket": "logintubesakb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449451622688:android:de30f0d4b2bf5c8549d745",
+        "android_client_info": {
+          "package_name": "com.imran.tubesakb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449451622688-5mgortmat5a8ld3jh26q0a7en8oqjv9q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARRKV_qaifDWo5Q9Jawa738iqcbCyTiN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449451622688-5mgortmat5a8ld3jh26q0a7en8oqjv9q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
