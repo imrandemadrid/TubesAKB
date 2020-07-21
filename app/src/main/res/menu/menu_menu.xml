@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ic_round_home"
+        android:id="@+id/home_menu"
+        android:title="Home" />
+    <item
+        android:icon="@drawable/ic_round_menu_book"
+        android:id="@+id/lookbok_menu"
+        android:title="Lookbook" />
+    <item
+        android:icon="@drawable/ic_twotone_emoji_objects_24"
+        android:id="@+id/tusntrick_menu"
+        android:title="Tips &amp; Trick" />
+    <item
+        android:icon="@drawable/ic_round_person"
+        android:id="@+id/profile_menu"
+        android:title="Profile" />
+</menu>

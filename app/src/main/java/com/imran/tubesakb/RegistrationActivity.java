@@ -15,6 +15,11 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+
+import java.util.HashMap;
+import java.util.Map;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -23,6 +28,8 @@ public class RegistrationActivity extends AppCompatActivity {
     private TextView userLogin;
     private FirebaseAuth firebaseAuth;
     String name, password, email;
+
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,16 +45,39 @@ public class RegistrationActivity extends AppCompatActivity {
                 if(validate()){
                     //database
 
-                    String user_email = userEmail.getText().toString().trim();
+                    final String user_email = userEmail.getText().toString().trim();
                     String user_password = userPassword.getText().toString().trim();
+                    final String user_name = userName.getText().toString().trim();
 
                     firebaseAuth.createUserWithEmailAndPassword(user_email,user_password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
 
                             if (task.isSuccessful()){
-                                Toast.makeText(RegistrationActivity.this, "Registrasi Berhasil", Toast.LENGTH_SHORT).show();
-                                startActivity(new Intent(RegistrationActivity.this, MainActivity2.class));
+                                // ngambil user id
+                                String uid = firebaseAuth.getCurrentUser().getUid();
+
+                                // ngambil collection ref di firebase firestore
+                                CollectionReference userRef = db.collection("users");
+
+                                // ngisi data yang akan dimasukan database firestore
+                                Map<String,Object> dataUser = new HashMap<>();
+                                dataUser.put("uid",uid);
+                                dataUser.put("nama",user_name);
+                                dataUser.put("userEmail",user_email);
+
+                                // memasukan data user ke firestore
+                                userRef.document(uid).set(dataUser).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    @Override
+                                    public void onComplete(@NonNull Task<Void> task) {
+                                        if(task.isSuccessful()){
+                                            Toast.makeText(RegistrationActivity.this, "Registrasi Berhasil", Toast.LENGTH_SHORT).show();
+                                            startActivity(new Intent(RegistrationActivity.this, MainActivity2.class));
+                                            finish();
+                                        }
+                                    }
+                                });
+
                             }else{
                                 Toast.makeText(RegistrationActivity.this, "Registrasi Gagal", Toast.LENGTH_SHORT).show();
                             }

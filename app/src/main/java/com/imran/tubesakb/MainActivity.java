@@ -4,13 +4,8 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.media.MediaPlayer;
-import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.VideoView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
                 @Override
                 public void run() {
                     startActivity(new Intent(MainActivity.this, MainActivity2.class));
+                    finish();
                 }
             }, DELAY_SPLASH);
     }

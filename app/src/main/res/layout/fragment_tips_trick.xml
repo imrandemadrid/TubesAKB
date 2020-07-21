@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.TipsTrickFragment">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/judul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:text="@string/judul_tips"
+            android:textColor="@color/colorBiruNavy"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="4dp"
+            android:background="@color/colorKuning"/>
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tips1"
+            android:textSize="18sp"
+            android:textColor="@color/colorBiruNavy"
+            android:paddingTop="15dp"
+            android:textStyle="italic"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/foto1"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/isitips1"
+            android:textColor="@color/colorBiruNavy"
+            android:textSize="14sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tips2"
+            android:textSize="18sp"
+            android:textColor="@color/colorBiruNavy"
+            android:paddingTop="15dp"
+            android:textStyle="italic"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/foto2"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/isitips2"
+            android:textColor="@color/colorBiruNavy"
+            android:textSize="14sp"
+            android:padding="10dp"/>
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tips3"
+            android:textSize="18sp"
+            android:textColor="@color/colorBiruNavy"
+            android:paddingTop="15dp"
+            android:textStyle="italic"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/foto3"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/isitips3"
+            android:textColor="@color/colorBiruNavy"
+            android:textSize="14sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tips4"
+            android:textSize="18sp"
+            android:textColor="@color/colorBiruNavy"
+            android:paddingTop="15dp"
+            android:textStyle="italic"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/foto4"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/isitips4"
+            android:textColor="@color/colorBiruNavy"
+            android:textSize="14sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tips5"
+            android:textSize="18sp"
+            android:textColor="@color/colorBiruNavy"
+            android:paddingTop="15dp"
+            android:textStyle="italic"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/foto5"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/isitips5"
+            android:textColor="@color/colorBiruNavy"
+            android:textSize="14sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tips6"
+            android:textSize="18sp"
+            android:textColor="@color/colorBiruNavy"
+            android:paddingTop="15dp"
+            android:textStyle="italic"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/foto6"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/isitips6"
+            android:textColor="@color/colorBiruNavy"
+            android:textSize="14sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tips7"
+            android:textSize="18sp"
+            android:textColor="@color/colorBiruNavy"
+            android:paddingTop="15dp"
+            android:textStyle="italic"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/foto7"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/isitips7"
+            android:textColor="@color/colorBiruNavy"
+            android:textSize="14sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tips8"
+            android:textSize="18sp"
+            android:textColor="@color/colorBiruNavy"
+            android:paddingTop="15dp"
+            android:textStyle="italic"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/foto8"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/isitips8"
+            android:textColor="@color/colorBiruNavy"
+            android:textSize="14sp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/tips9"
+            android:textSize="18sp"
+            android:textColor="@color/colorBiruNavy"
+            android:paddingTop="15dp"
+            android:textStyle="italic"/>
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:src="@drawable/foto9"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/isitips9"
+            android:textColor="@color/colorBiruNavy"
+            android:textSize="14sp"
+            android:padding="10dp"
+            android:paddingBottom="20dp"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>
+
+</FrameLayout>
