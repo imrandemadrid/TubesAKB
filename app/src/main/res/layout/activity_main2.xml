@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity2"
-    android:background="#02073D">
+    android:background="#02073D"
+    tools:context=".MainActivity2">
 
     <EditText
         android:id="@+id/etName"
@@ -59,10 +59,12 @@
         android:layout_height="47dp"
         android:layout_marginBottom="164dp"
         android:backgroundTint="#ffd700"
-        android:textColor="#000"
         android:text="Sign up"
+        android:textColor="#000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
